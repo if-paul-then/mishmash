@@ -24,7 +24,7 @@ function pdfUnlock(encryptedPdfBlob, pdfPassword, projectPublicKey) {
 
 Extracting text from a PDF:
 ```
-function pdfToTxt(pdfBlob) {
+function pdfToTxt(pdfBlob, projectPublicKey) {
   var api = ILovePdfLib.createApi(projectPublicKey);
   var task = api.createTask("extract");
   task.addFile(pdfBlob);
